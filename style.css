@@ -1,0 +1,107 @@
+/* Aturan dasar & box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* 1. Selector Elemen */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: rgb(96, 0, 0);
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+article {
+    width: 100%;
+    background: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;;
+}
+h2 {
+    text-align: center;
+}
+
+aside {
+    width: 30%;
+    background: white;
+    padding: 15px;
+    border: 1px dashed #888;
+    border-radius: 10px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* 2. Selector Class */
+.gambar-artikel {
+    width: 60%;
+    height: 300px;
+    background-color: #dcdde1;
+    display: block;
+    margin: 0 auto;
+}
+
+.foto-profil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #dcdde1;
+    display: inline-block;
+}
+
+/* 3. Selector ID */
+#formKontak {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#formKontak input[type="text"],
+#formKontak input[type="email"],
+#formKontak select,
+#formKontak textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#formKontak label[for="langganan"] {
+    display: inline;
+    font-weight: normal;
+}
+
+#formKontak button {
+    background-color: #720101;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formKontak button:hover {
+    background-color: #ff0000;
+}
